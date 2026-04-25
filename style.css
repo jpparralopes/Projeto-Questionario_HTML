@@ -1,0 +1,148 @@
+
+body{
+   background-color: #0f172a;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #e2e8f0;
+    background-color: #1e293b;
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;      
+    margin: 0 auto;             
+    padding: 0;            
+    display: flex;         
+    gap: 20px;             
+    margin: 0 auto;
+    width: 50%;
+}
+
+nav li {
+    display: inline;       
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    margin: 10px;
+    background-color: #1e293b;
+    border-radius:  10px;
+    
+}
+
+nav a {
+    text-decoration: none; 
+    color: black;         
+    font-weight: bold;
+    color:#e2e8f0 ;
+    
+}
+.introducao{
+    text-align: center;
+    background-color: #1e293b;
+    padding: 5px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.introducao h2{
+    color: #38bdf8;
+}
+.introducao p{
+    color:seashell;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+}
+.estrutura,
+.tags,
+.listas,
+.formularios {
+    background-color: #1e293b;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.estrutura h2,
+.tags h2,
+.listas h2,
+.formularios h2 {
+    color: #38bdf8;
+}
+
+.estrutura p,
+.tags p,
+.listas p,
+.formularios p {
+    color: #cbd5e1;
+}
+.conclusao{
+background-color: #1e293b;
+width: 50%;
+padding: 15px;
+margin: 12px;
+margin: 0 auto;
+border-radius: 20px;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.conclusao h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #38bdf8;
+    border: 10px;
+
+}
+.conclusao p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #cbd5e1;
+}
+#mensagem {
+    text-align: center;
+    margin: 10px;
+    color: #cbd5e1;
+    font-size: 20px;
+}
+.questionario img{
+    text-align:center;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    border-radius: 10px;
+}
+.questoes{
+text-align: center;
+margin: 0 auto;
+    color:#cbd5e1;
+    text-align: left;
+    width: 45%;
+    margin: 0 auto;
+}
+.questoes p{
+    color: #38bdf8;
+    font-size: 22px;
+}
