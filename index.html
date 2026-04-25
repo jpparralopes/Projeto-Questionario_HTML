@@ -1,197 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site sobre html</title>
-    <link rel="icon" href="htmlicon.webp" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <title>LOGIN</title>
+    <link rel="icon" href="login icon.jpg" type="image/png">
+    <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-    <h1>Repositório sobre HTML</h1>
-    <nav>
-        <ul>
-            <li><a href="#introducao">Introdução</a></li>
-            <li><a href="#estrutura">Estrutura</a></li>
-            <li><a href="#tags">Tags</a></li>
-            <li><a href="#formularios">Formulários</a></li>
-            <li><a href="#listas">Listas</a></li>
-            <li><a href="#formularios">Formulários</a></li>
-            <li><a href="#conclusao">Conclusão</a></li>
-        </ul>
-    </nav>
-    <br>
-    <br>
-    <section class="introducao" id="introducao">
-        <h2>Introdução</h2>
-        <p>HTML (HyperText Markup Language) é a linguagem utilizada para criar a estrutura de páginas web. <br>Com ele,
-            definimos títulos, parágrafos, imagens, links e outros elementos que compõem um site.</p>
-        <img src="html imagem.png" alt="html image" width="600px">
-
-    </section>
-    <div class="container">
-        <section class="estrutura" id="estrutura">
-            <h2>Estrutura Básica</h2>
-            <p>Todo documento HTML possui uma estrutura padrão:<br>
-                &lt;!DOCTYPE html&gt; → define o tipo do documento<br>
-                &lt;html&gt; → raiz da página<br>
-                &lt;head&gt; → configurações (título, meta, etc.)<br>
-                &lt;body&gt; → conteúdo visível ao usuário</p>
-
-        </section>
-
-        <section class="tags" id="tags">
-            <h2>Principais Tags</h2>
-            <p>Algumas das tags mais utilizadas no HTML são:<br>
-                &lt;h1&gt; até &lt;h6&gt; → títulos<br>
-                &lt;p&gt; → parágrafos<br>
-                &lt;a&gt; → links<br>
-                &lt;img&gt; → imagens<br>
-                &lt;div&gt; → organização de conteúdo</p>
-        </section>
-    </div>
-    <div class="container">
-        <section class="listas" id="listas">
-            <h2>Listas</h2>
-            <p>O HTML permite criar listas organizadas:<br>
-                &lt;ul&gt; → lista não ordenada<br>
-                &lt;ol&gt; → lista ordenada<br>
-                &lt;li&gt; → item da lista</p>
-        </section>
-
-        <section class="formularios" id="formularios">
-            <h2>Formulários</h2>
-            <p>Formulários são usados para coletar dados do usuário:<br>
-                &lt;input&gt; → campos de entrada<br>
-                &lt;textarea&gt; → texto longo<br>
-                &lt;select&gt; → lista de opções<br>
-                &lt;button&gt; → botão</p>
-        </section>
-    </div>
-    <section class="conclusao" id="conclusao">
-        <h2>Conclusão</h2>
-        <p>O HTML é a base do desenvolvimento web, sendo responsável pela estrutura das páginas. <br> Ele trabalha junto
-            com CSS e JavaScript para criar sites completos e interativos.</p>
-    </section>
-
-    <div class="questionario">
-        <h1>Questionário</h1>
-        <img src="questionario imagem.png" alt="imagem de questionário.">
-    </div>
-    <section class="questoes" id="questoes">
-        <div class="questao1">
-            <p>Quais das opções abaixo são tags válidas do HTML?</p>
-
-            <label><input type="radio" name="pergunta1" value="A"> Programação</label><br>
-            <label><input type="radio" name="pergunta1" value="B"> Modelagem</label><br>
-            <label><input type="radio" name="pergunta1" value="C"> Marcação</label><br>
-            <label><input type="radio" name="pergunta1" value="D"> Estruturação</label>
+        
+        <div class="login" id="login">
+        <h1>Faça seu login</h1>
+        <input id="nome" type="text" placeholder="Usuário"><br>
+        <input id="senhas" type="password" placeholder="Senha"><br>
+        <button onclick="validarUsuario()">Confirmar</button>
         </div>
-        <div class="questao2">
-            <p>Quais das opções abaixo são tags válidas do HTML?</p>
+<script>
+    function validarUsuario(){
+        let usuario = document.getElementById("nome").value;
+        let senha = document.getElementById("senhas").value;
 
-            <label><input type="checkbox" name="q2" value="div"> &lt;div&gt;</label><br>
-            <label><input type="checkbox" name="q2" value="section"> &lt;section&gt;</label><br>
-            <label><input type="checkbox" name="q2" value="printf"> &lt;printf&gt;</label><br>
-            <label><input type="checkbox" name="q2" value="blink"> &lt;blink&gt;</label>
-        </div>
-
-        <div class="questao3">
-            <p>Para que serve o atributo "alt" na tag &lt;img&gt;?</p>
-
-            <label><input type="radio" name="q3" value="A"> Definir o tamanho da imagem</label><br>
-            <label><input type="radio" name="q3" value="B"> Mostrar um texto alternativo caso a imagem não
-                carregue</label><br>
-            <label><input type="radio" name="q3" value="C"> Centralizar a imagem</label><br>
-            <label><input type="radio" name="q3" value="D"> Aplicar estilo na imagem</label>
-        </div>
-        <div class="questao4">
-            <p>Qual das opções representa corretamente a estrutura básica de um documento HTML?</p>
-
-            <label><input type="radio" name="q4" value="A"> &lt;html&gt; &lt;head&gt; &lt;body&gt;</label><br>
-            <label><input type="radio" name="q4" value="B"> &lt;body&gt; &lt;head&gt; &lt;html&gt;</label><br>
-            <label><input type="radio" name="q4" value="C"> &lt;head&gt; &lt;html&gt; &lt;body&gt;</label><br>
-            <label><input type="radio" name="q4" value="D"> &lt;html&gt; &lt;body&gt; &lt;head&gt;</label>
-        </div>
-        <div class="questao5">
-            <p>Explique qual é a função da tag &lt;div&gt; no HTML e em quais situações ela deve ser utilizada.</p>
-            <textarea id="resposta" name="resposta" rows="4" cols="50" placeholder="Digite sua Resposta"></textarea><br>
-            <button onclick="respostas()"> Enviar Resposta</button>
-            <p id="mensagem"></p>
-        </div>
-    </section>
-
-    <script>
-        function respostas() {
-
-            console.log("----- RESPOSTAS -----");
-            let resposta1 = document.querySelector('input[name="pergunta1"]:checked');
-
-            if (resposta1) {
-                console.log("Q1:", resposta1.value);
-            } else {
-                console.log("Q1: nada selecionado");
-            }
-
-
-            let respostas2 = document.querySelectorAll('input[name="q2"]:checked');
-
-            if (respostas2.length > 0) {
-                respostas2.forEach(item => {
-                    console.log("Q2:", item.value);
-                });
-            } else {
-                console.log("Q2: nada selecionado");
-            }
-
-
-
-            let resposta3 = document.querySelector('input[name="q3"]:checked');
-
-            if (resposta3) {
-                console.log("Q3:", resposta3.value);
-            } else {
-                console.log("Q3: nada selecionado");
-            }
-
-
-            let resposta4 = document.querySelector('input[name="q4"]:checked');
-
-            if (resposta4) {
-                console.log("Q4:", resposta4.value);
-            } else {
-                console.log("Q4: nada selecionado");
-            }
-
-            const inputTarefa = document.getElementById("resposta")
-            let tarefa = inputTarefa.value
-            const mensagem = document.getElementById("mensagem")
-            console.log("Q5:", tarefa);
-
-            inputTarefa.value = ""
-            let radios = document.querySelectorAll('input[type="radio"]');
-            radios.forEach(radio => radio.checked = false);
-
-
-            let checks = document.querySelectorAll('input[type="checkbox"]');
-            checks.forEach(check => check.checked = false);
-
-
-
-            if (tarefa == "") {
-                let mensagemErro = "Campo Vazio, Digite Algo!"
-                mensagem.textContent = mensagemErro
-                alert("ERROR, CAMPO VAZIO")
-            } else {
-                mensagem.textContent = ("Mensagem Enviada com Sucesso!")
-
-
-            }
+        if(usuario === "admin" && senha === "1234"){
+            window.location.href = "questionario.html";
+        }else{
+            alert("Usuário ou Senha INCORRETA");
+            senhas.value=""
+            nome.value=""
         }
+}
+</script>
 
-    </script>
 </body>
-
 </html>
